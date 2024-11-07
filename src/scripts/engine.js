@@ -29,7 +29,7 @@ function countDown() {
 
   if (state.values.lives > 0) {
       state.values.lives--;
-      state.view.lives.textContent = state.values.lives;
+      state.view.lives.textContent = `x ${state.values.lives}`;
       state.values.curretTime = 60;
       state.view.timeLeft.textContent = state.values.curretTime;
       state.actions.countDownTimerId = setInterval(countDown, 1000);
@@ -73,7 +73,7 @@ function addListenerHitBox() {
 
 function initialize() {
   addListenerHitBox();
-  state.view.lives.textContent = state.values.lives;
+  state.view.lives.textContent = `x ${state.values.lives}`;
 }
 
 initialize();
