@@ -5,13 +5,13 @@ const state = {
     timeLeft: document.querySelector("#time-left"),
     score: document.querySelector("#score"),
     lives: document.querySelector("#lives"),
-
   },
   values: {
     gameVelocity: 1000,
     hitPosition: 0,
     result: 0,
     curretTime: 60,
+    lives: 3,
   },
   actions: {
     timerId: setInterval(randomSquare, 1000),
