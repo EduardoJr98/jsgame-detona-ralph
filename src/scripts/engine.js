@@ -32,7 +32,7 @@ function countDown() {
   if (state.values.lives > 0) {
       state.values.lives--;
       state.view.lives.textContent = `x${state.values.lives}`;
-      state.values.curretTime = 60;
+      state.values.curretTime = 10;
       state.view.timeLeft.textContent = state.values.curretTime;
       updateHighScore();
       if (state.values.lives > 0) {
