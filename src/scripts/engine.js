@@ -11,7 +11,7 @@ const state = {
     gameVelocity: 1000,
     hitPosition: 0,
     result: 0,
-    curretTime: 10,
+    curretTime: 60,
     lives: 3,
     highscore: 0,
   },
@@ -32,7 +32,7 @@ function countDown() {
   if (state.values.lives > 0) {
       state.values.lives--;
       state.view.lives.textContent = `x${state.values.lives}`;
-      state.values.curretTime = 10;
+      state.values.curretTime = 60;
       state.view.timeLeft.textContent = state.values.curretTime;
       updateHighScore();
       if (state.values.lives > 0) {
